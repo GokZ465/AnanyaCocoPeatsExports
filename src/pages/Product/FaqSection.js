@@ -176,11 +176,16 @@ const FaqSection = () => {
   const [parentWidth, setParentwidth] = useState(1000);
 
   return (
-    <motion.div variants={fade} initial="hidden" animate="show" exit="exit">
-        <FAQ initial="hidden" ref={element} className="faq">
-      <h2 style={{ fontSize: "2.7rem" }}>Products Listing</h2>
-      <AnimateSharedLayout>
-        {/* <Toggle title="Cocopeat Grow Bags">
+    <motion.div
+      variants={photoAnimation}
+      initial="hidden"
+      animate="show"
+      exit="exit"
+    >
+      <FAQ initial="hidden" ref={element} className="faq">
+        <h2 style={{ fontSize: "2.7rem" }}>Products Listing</h2>
+        <AnimateSharedLayout>
+          {/* <Toggle title="Cocopeat Grow Bags">
           <div className="answer">
             <p>
               <b>
@@ -216,223 +221,224 @@ const FaqSection = () => {
             </p>
           </div>
         </Toggle> */}
-        <Toggle title="Cocopeat chips block">
-          <div className="answer">
-            <p></p>
-            <p>
-              <b>
-                <em></em>
-              </b>{" "}
-              Cocopeat chips blocks are compressed blocks made from cocopeat
-              chips, which are small pieces of the coconut husk. These blocks
-              are commonly used as a growing medium for plants in horticulture
-              and agriculture. Cocopeat chips blocks are highly absorbent,
-              provide good aeration and drainage, and have excellent water
-              retention properties. They are a sustainable alternative to
-              traditional growing mediums such as peat moss and rock wool.
-              <NavLink
-                className="styled-link"
-                to="/subspack"
-                style={{ width: "fit-content", color: "#23d997" }}
-              ></NavLink>
-              <div style={containerStyles}>
-                <ImageSlider
-                  slides={slides2}
-                  parentWidth={
-                    typeof window !== "undefined"
-                      ? window.innerWidth
-                      : parentWidth
-                  }
-                />
-              </div>
-              <table>
-                <thead>
-                  <tr>
-                    <th>Property</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Material</td>
-                    <td>Cocochips (coconut husk chips)</td>
-                  </tr>
-                  <tr>
-                    <td>Block Size</td>
-                    <td>5kg</td>
-                  </tr>
-                  <tr>
-                    <td>EC</td>
-                    <td>&lt;0.5 mS/cm (low salt content)</td>
-                  </tr>
-                  <tr>
-                    <td>pH</td>
-                    <td>5.8 - 6.8</td>
-                  </tr>
-                  <tr>
-                    <td>Moisture</td>
-                    <td>&lt;20%</td>
-                  </tr>
-                  <tr>
-                    <td>Particle Size</td>
-                    <td>1/2 inch to 3/4 inch (12-18 mm)</td>
-                  </tr>
-                  <tr>
-                    <td>Air-Filled Porosity</td>
-                    <td>10 - 20%</td>
-                  </tr>
-                  <tr>
-                    <td>Water Holding Capacity</td>
-                    <td>60 - 70%</td>
-                  </tr>
-                  <tr>
-                    <td>Decomposition Rate</td>
-                    <td>Slow</td>
-                  </tr>
-                  <tr>
-                    <td>Uses</td>
-                    <td>
-                      Horticulture, agriculture, and other plant-growing uses.
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </p>
-          </div>
-        </Toggle>
-        <Toggle title="Cocopeat Grow Bags">
-          <div className="answer">
-            <p>
-              Cocopeat grow bags are made from woven polypropylene bags filled
-              with cocopeat. They are used for growing plants in hydroponics
-              systems, greenhouses, and other agricultural applications.
-              Cocopeat grow bags are
-              <ul>
-                <li>highly durable</li>
-                <li>pH-neutral</li>
-                <li>and provide excellent drainage for plants</li>
-              </ul>
-            </p>
-          </div>
-          <div style={containerStyles}>
-            <ImageSlider
-              slides={slides3}
-              parentWidth={
-                typeof window !== "undefined" ? window.innerWidth : parentWidth
-              }
-            />
-          </div>
-        </Toggle>
-        <Toggle title="Cocopeat Blocks">
-          <div className="answer">
-            {/* <p>Let's have some meaningful conversations</p> */}
-            <p>
-              These are compressed blocks of cocopeat that are used for various
-              applications such as horticulture, agriculture, and hydroponics.
-              They are lightweight, easy to handle, and are a sustainable
-              alternative to traditional peat moss. Cocopeat blocks are highly
-              absorbent and retain water well, making them an ideal growing
-              medium for plants.
-              <NavLink
-                className="styled-link"
-                to="/contact"
-                style={{ width: "fit-content", color: "#23d997" }}
-              >
-                Contact Us
-              </NavLink>
-              <div style={containerStyles}>
-                <ImageSlider
-                  slides={slides1}
-                  parentWidth={
-                    typeof window !== "undefined"
-                      ? window.innerWidth
-                      : parentWidth
-                  }
-                />
-              </div>
-              <div>
-                {" "}
-                <p>LOW EC 5 Kg blocks:</p>
+          <Toggle title="Cocopeat chips block">
+            <div className="answer">
+              <p></p>
+              <p>
+                <b>
+                  <em></em>
+                </b>{" "}
+                Cocopeat chips blocks are compressed blocks made from cocopeat
+                chips, which are small pieces of the coconut husk. These blocks
+                are commonly used as a growing medium for plants in horticulture
+                and agriculture. Cocopeat chips blocks are highly absorbent,
+                provide good aeration and drainage, and have excellent water
+                retention properties. They are a sustainable alternative to
+                traditional growing mediums such as peat moss and rock wool.
+                <NavLink
+                  className="styled-link"
+                  to="/subspack"
+                  style={{ width: "fit-content", color: "#23d997" }}
+                ></NavLink>
+                <div style={containerStyles}>
+                  <ImageSlider
+                    slides={slides2}
+                    parentWidth={
+                      typeof window !== "undefined"
+                        ? window.innerWidth
+                        : parentWidth
+                    }
+                  />
+                </div>
                 <table>
-                  <tr>
-                    <th>Specification</th>
-                    <th>Value</th>
-                  </tr>
-                  <tr>
-                    <td>EC</td>
-                    <td>Low EC / EC &lt; 0.5mS/cm</td>
-                  </tr>
-                  <tr>
-                    <td>pH</td>
-                    <td>5.5 to 6.8</td>
-                  </tr>
-                  <tr>
-                    <td>Fibre Content</td>
-                    <td>&lt; 2%</td>
-                  </tr>
-                  <tr>
-                    <td>Block Dimension</td>
-                    <td>30x30x12 cms</td>
-                  </tr>
-                  <tr>
-                    <td>Weight</td>
-                    <td>5 Kg (11 Lbs)</td>
-                  </tr>
-                  <tr>
-                    <td>Moisture</td>
-                    <td>10% to 15%</td>
-                  </tr>
-                  <tr>
-                    <td>Compression Ratio</td>
-                    <td>5:1</td>
-                  </tr>
-                  <tr>
-                    <td>Dehydrated Yield</td>
-                    <td>75 Liters</td>
-                  </tr>
+                  <thead>
+                    <tr>
+                      <th>Property</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Material</td>
+                      <td>Cocochips (coconut husk chips)</td>
+                    </tr>
+                    <tr>
+                      <td>Block Size</td>
+                      <td>5kg</td>
+                    </tr>
+                    <tr>
+                      <td>EC</td>
+                      <td>&lt;0.5 mS/cm (low salt content)</td>
+                    </tr>
+                    <tr>
+                      <td>pH</td>
+                      <td>5.8 - 6.8</td>
+                    </tr>
+                    <tr>
+                      <td>Moisture</td>
+                      <td>&lt;20%</td>
+                    </tr>
+                    <tr>
+                      <td>Particle Size</td>
+                      <td>1/2 inch to 3/4 inch (12-18 mm)</td>
+                    </tr>
+                    <tr>
+                      <td>Air-Filled Porosity</td>
+                      <td>10 - 20%</td>
+                    </tr>
+                    <tr>
+                      <td>Water Holding Capacity</td>
+                      <td>60 - 70%</td>
+                    </tr>
+                    <tr>
+                      <td>Decomposition Rate</td>
+                      <td>Slow</td>
+                    </tr>
+                    <tr>
+                      <td>Uses</td>
+                      <td>
+                        Horticulture, agriculture, and other plant-growing uses.
+                      </td>
+                    </tr>
+                  </tbody>
                 </table>
-              </div>
-              <div>
-                {" "}
-                <p>HIGH EC 5 Kg blocks:</p>
-                <table>
-                  <tr>
-                    <th>Specification</th>
-                    <th>Value</th>
-                  </tr>
-                  <tr>
-                    <td>EC</td>
-                    <td>High EC / EC &gt; 1 mS/cm</td>
-                  </tr>
-                  <tr>
-                    <td>Fibre Content</td>
-                    <td>&lt; 2%</td>
-                  </tr>
-                  <tr>
-                    <td>Block Dimension</td>
-                    <td>30x30x12 cms</td>
-                  </tr>
-                  <tr>
-                    <td>Weight</td>
-                    <td>5 Kg</td>
-                  </tr>
-                  <tr>
-                    <td>Moisture</td>
-                    <td>10% to 15%</td>
-                  </tr>
-                  <tr>
-                    <td>Compression Ratio</td>
-                    <td>5:1</td>
-                  </tr>
-                </table>
-              </div>
-            </p>
-          </div>
-        </Toggle>
-      </AnimateSharedLayout>
-    </FAQ>
+              </p>
+            </div>
+          </Toggle>
+          <Toggle title="Cocopeat Grow Bags">
+            <div className="answer">
+              <p>
+                Cocopeat grow bags are made from woven polypropylene bags filled
+                with cocopeat. They are used for growing plants in hydroponics
+                systems, greenhouses, and other agricultural applications.
+                Cocopeat grow bags are
+                <ul>
+                  <li>highly durable</li>
+                  <li>pH-neutral</li>
+                  <li>and provide excellent drainage for plants</li>
+                </ul>
+              </p>
+            </div>
+            <div style={containerStyles}>
+              <ImageSlider
+                slides={slides3}
+                parentWidth={
+                  typeof window !== "undefined"
+                    ? window.innerWidth
+                    : parentWidth
+                }
+              />
+            </div>
+          </Toggle>
+          <Toggle title="Cocopeat Blocks">
+            <div className="answer">
+              {/* <p>Let's have some meaningful conversations</p> */}
+              <p>
+                These are compressed blocks of cocopeat that are used for
+                various applications such as horticulture, agriculture, and
+                hydroponics. They are lightweight, easy to handle, and are a
+                sustainable alternative to traditional peat moss. Cocopeat
+                blocks are highly absorbent and retain water well, making them
+                an ideal growing medium for plants.
+                <NavLink
+                  className="styled-link"
+                  to="/contact"
+                  style={{ width: "fit-content", color: "#23d997" }}
+                >
+                  Contact Us
+                </NavLink>
+                <div style={containerStyles}>
+                  <ImageSlider
+                    slides={slides1}
+                    parentWidth={
+                      typeof window !== "undefined"
+                        ? window.innerWidth
+                        : parentWidth
+                    }
+                  />
+                </div>
+                <div>
+                  {" "}
+                  <p>LOW EC 5 Kg blocks:</p>
+                  <table>
+                    <tr>
+                      <th>Specification</th>
+                      <th>Value</th>
+                    </tr>
+                    <tr>
+                      <td>EC</td>
+                      <td>Low EC / EC &lt; 0.5mS/cm</td>
+                    </tr>
+                    <tr>
+                      <td>pH</td>
+                      <td>5.5 to 6.8</td>
+                    </tr>
+                    <tr>
+                      <td>Fibre Content</td>
+                      <td>&lt; 2%</td>
+                    </tr>
+                    <tr>
+                      <td>Block Dimension</td>
+                      <td>30x30x12 cms</td>
+                    </tr>
+                    <tr>
+                      <td>Weight</td>
+                      <td>5 Kg (11 Lbs)</td>
+                    </tr>
+                    <tr>
+                      <td>Moisture</td>
+                      <td>10% to 15%</td>
+                    </tr>
+                    <tr>
+                      <td>Compression Ratio</td>
+                      <td>5:1</td>
+                    </tr>
+                    <tr>
+                      <td>Dehydrated Yield</td>
+                      <td>75 Liters</td>
+                    </tr>
+                  </table>
+                </div>
+                <div>
+                  {" "}
+                  <p>HIGH EC 5 Kg blocks:</p>
+                  <table>
+                    <tr>
+                      <th>Specification</th>
+                      <th>Value</th>
+                    </tr>
+                    <tr>
+                      <td>EC</td>
+                      <td>High EC / EC &gt; 1 mS/cm</td>
+                    </tr>
+                    <tr>
+                      <td>Fibre Content</td>
+                      <td>&lt; 2%</td>
+                    </tr>
+                    <tr>
+                      <td>Block Dimension</td>
+                      <td>30x30x12 cms</td>
+                    </tr>
+                    <tr>
+                      <td>Weight</td>
+                      <td>5 Kg</td>
+                    </tr>
+                    <tr>
+                      <td>Moisture</td>
+                      <td>10% to 15%</td>
+                    </tr>
+                    <tr>
+                      <td>Compression Ratio</td>
+                      <td>5:1</td>
+                    </tr>
+                  </table>
+                </div>
+              </p>
+            </div>
+          </Toggle>
+        </AnimateSharedLayout>
+      </FAQ>
     </motion.div>
-    
   );
 };
 
