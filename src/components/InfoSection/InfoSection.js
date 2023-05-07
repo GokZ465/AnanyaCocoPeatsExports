@@ -15,12 +15,10 @@ import { Container, Button } from "../../globalStyles";
 import { Link } from "react-router-dom";
 
 import {
-  pageAnimation,
+
   photoAnimation,
-  fade,
-  lineAnimation,
-  slider,
-  sliderContainer,
+ 
+
 } from "../../components/Animation/Animation";
 const InfoSection = ({
   primary,
