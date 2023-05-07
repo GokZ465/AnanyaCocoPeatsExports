@@ -29,41 +29,41 @@ const slides1 = [
   {
     title: "train3",
     url: "https://portfolio465.s3.ap-south-1.amazonaws.com/cocopeatblocks/25.jpg",
-    text: "We are a leading exporter of cocopeat",
+    // text: "We are a leading exporter of cocopeat",
   },
   {
     title: "train3",
     url: "https://portfolio465.s3.ap-south-1.amazonaws.com/cocopeatblocks/2.jpg",
-    text: "catering to the needs of clients",
+    // text: "catering to the needs of clients",
   },
 ];
 const slides2 = [
   {
     title: "train3",
     url: "https://portfolio465.s3.ap-south-1.amazonaws.com/cocopeatblocks/cocopeat+chips+block/6.JPG",
-    text: "catering to the needs of clients from",
+    // text: "catering to the needs of clients from",
   },
   {
     title: "train3",
     url: "https://portfolio465.s3.ap-south-1.amazonaws.com/cocopeatblocks/cocopeat+chips+block/7.png",
-    text: "all over the world.",
+    // text: "all over the world.",
   },
 ];
 const slides3 = [
   {
     title: "train3",
     url: "https://portfolio465.s3.ap-south-1.amazonaws.com/cocopeatblocks/10.jpg",
-    text: "catering to the needs of clients from",
+    // text: "catering to the needs of clients from",
   },
   {
     title: "train3",
     url: "https://portfolio465.s3.ap-south-1.amazonaws.com/cocopeatblocks/14.jpg",
-    text: "all over the world.",
+    // text: "all over the world.",
   },
   {
     title: "train3",
     url: "https://portfolio465.s3.ap-south-1.amazonaws.com/cocopeatblocks/15.jpg",
-    text: "catering to the needs of clients from",
+    // text: "catering to the needs of clients from",
   },
 ];
 const containerStyles = {

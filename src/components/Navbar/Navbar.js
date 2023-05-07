@@ -123,7 +123,7 @@ function Navbar() {
               </NavItem>
 
               <NavItemBtn>
-                {button ? (
+                {/* {button ? (
                   <NavBtnLink to="/sign-up">
                     <Button primary>SIGN UP</Button>
                   </NavBtnLink>
@@ -133,7 +133,7 @@ function Navbar() {
                       SIGN UP
                     </Button>
                   </NavBtnLink>
-                )}
+                )} */}
               </NavItemBtn>
             </NavMenu>
           </NavbarContainer>
