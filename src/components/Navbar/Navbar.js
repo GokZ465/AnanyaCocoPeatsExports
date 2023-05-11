@@ -14,7 +14,7 @@ import { IconContext } from "react-icons/lib";
 
 function Navbar() {
   const [click, setClick] = useState(false);
-  const [setButton] = useState(true);
+  const [Buttonset, setButton] = useState(true);
 
   const [homeClick, setHomeClick] = useState(false);
   const [servicesClick, setServicesClick] = useState(false);
