@@ -1,14 +1,16 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import GlobalStyles from "./globalStyles";
 import { Navbar, Footer } from "./components";
-import Home from "./pages/HomePage/Home";
-import Services from "./pages/Services/Services";
-import Products from "./pages/Products/Products";
-import SignUp from "./pages/SignUp/SignUp";
 import ScrollToTop from "./components/ScrollToTop";
-import FaqSection from "./pages/Product/FaqSection";
-import ContactUs from "./pages/ContactUs/ContactUs";
+
+// Lazy-loaded components
+const Home = lazy(() => import("./pages/HomePage/Home"));
+const Services = lazy(() => import("./pages/Services/Services"));
+const Products = lazy(() => import("./pages/Products/Products"));
+const SignUp = lazy(() => import("./pages/SignUp/SignUp"));
+const FaqSection = lazy(() => import("./pages/Product/FaqSection"));
+const ContactUs = lazy(() => import("./pages/ContactUs/ContactUs"));
 
 function App() {
   return (
@@ -16,12 +18,14 @@ function App() {
       <GlobalStyles />
       <ScrollToTop />
       <Navbar />
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/about" component={Services} />
-        <Route path="/products" component={FaqSection} />
-        <Route path="/contact" component={ContactUs} />
-      </Switch>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/about" component={Services} />
+          <Route path="/products" component={FaqSection} />
+          <Route path="/contact" component={ContactUs} />
+        </Switch>
+      </Suspense>
       <Footer />
     </Router>
   );
