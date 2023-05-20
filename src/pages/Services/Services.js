@@ -1,14 +1,14 @@
 import React from "react";
 import { InfoSection, Pricing } from "../../components";
 import { homeObjOne, homeObjThree } from "./Data";
-import { AnimatePresence, motion } from "framer-motion/dist/framer-motion";
-import
- {pageAnimation,
-photoAnimation,
-fade,
-lineAnimation,
-slider,
-sliderContainer,
+import { AnimatePresence, motion } from "framer-motion";
+import {
+  pageAnimation,
+  photoAnimation,
+  fade,
+  lineAnimation,
+  slider,
+  sliderContainer,
 } from "../../components/Animation/Animation";
 import {
   PricingSection,

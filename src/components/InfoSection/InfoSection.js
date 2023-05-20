@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion/dist/framer-motion";
+import { motion } from "framer-motion";
 import {
   InfoSec,
   InfoRow,
@@ -14,12 +14,7 @@ import {
 import { Container, Button } from "../../globalStyles";
 import { Link } from "react-router-dom";
 
-import {
-
-  photoAnimation,
- 
-
-} from "../../components/Animation/Animation";
+import { photoAnimation } from "../../components/Animation/Animation";
 const InfoSection = ({
   primary,
   lightBg,
@@ -34,7 +29,7 @@ const InfoSection = ({
   alt,
   imgStart,
   start,
-  buttonBool
+  buttonBool,
 }) => {
   return (
     <motion.div variants={photoAnimation}>
@@ -47,9 +42,14 @@ const InfoSection = ({
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
                 <Link to="/sign-up">
-                 { buttonBool ==='false' ? <></> : <Button big fontBig primary={primary}>  {buttonLabel}
-                  </Button>}
-                   
+                  {buttonBool === "false" ? (
+                    <></>
+                  ) : (
+                    <Button big fontBig primary={primary}>
+                      {" "}
+                      {buttonLabel}
+                    </Button>
+                  )}
                 </Link>
               </TextWrapper>
             </InfoColumn>

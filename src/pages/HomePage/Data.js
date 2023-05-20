@@ -1,3 +1,4 @@
+import home_svg from "../../images/home_svg.svg";
 export const homeObjOne = {
   primary: true,
   lightBg: false,
@@ -11,7 +12,7 @@ export const homeObjOne = {
     "Our cocopeat is made from natural coconut husks, which are processed to create a fine, uniform texture that's perfect for a variety of applications.",
   buttonLabel: "Get Started",
   imgStart: "",
-  img: require("../../images/home_svg.svg"),
+  img: home_svg,
   alt: "Credit Card",
   start: "",
 };

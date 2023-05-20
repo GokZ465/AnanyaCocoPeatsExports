@@ -1,8 +1,4 @@
-import {
-  AnimatePresence,
-  useAnimation,
-  motion,
-} from "framer-motion/dist/framer-motion";
+import { AnimatePresence, useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 export const useScroll = () => {

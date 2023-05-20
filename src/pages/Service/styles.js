@@ -1,9 +1,5 @@
 import styled from "styled-components";
-import {
-  AnimatePresence,
-  useAnimation,
-  motion,
-} from "framer-motion/dist/framer-motion";
+import { AnimatePresence, useAnimation, motion } from "framer-motion";
 
 export const Layout = styled(motion.div)`
   min-height: 90vh;

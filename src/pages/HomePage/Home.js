@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { InfoSection, Pricing } from "../../components";
-import { AnimatePresence, motion } from "framer-motion/dist/framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { homeObjOne, homeObjThree, homeObjTwo, homeObjFour } from "./Data";
 import ImageSlider from "./ImageSlider";
 import ServiceSection from "../Service/ServiceSection.js";

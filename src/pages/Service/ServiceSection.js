@@ -2,14 +2,14 @@ import React from "react";
 import styled from "styled-components";
 import { Layout, Description, ImageContainer } from "./styles";
 // Animation
-import { AnimatePresence, motion } from "framer-motion/dist/framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { useScroll } from "../../components/hooks/useScroll";
 import { fade, photoAnimation } from "../../components/Animation/Animation";
 //Import Icons
 import clock from "../../components/img/badge.svg";
 import diaphragm from "../../components/img/settings.svg";
 import money from "../../components/img/delivery.svg";
-import teamwork from "../../components/img/money.svg"
+import teamwork from "../../components/img/money.svg";
 import home2 from "../../images/home5_svg.svg";
 
 const Services = styled(Layout)`
@@ -139,39 +139,42 @@ const ServicesSection = () => {
                 src={clock}
                 alt="icon"
               />
-              <h4 style={{color:'#28b485'}}>Quality & Reliablity </h4>
+              <h4 style={{ color: "#28b485" }}>Quality & Reliablity </h4>
             </div>
             <p style={{ color: "#242424" }}>
-            We are committed to providing our clients with reliable service, from the moment you contact us to the delivery of your order.
+              We are committed to providing our clients with reliable service,
+              from the moment you contact us to the delivery of your order.
             </p>
           </Card>
           <Card className="card">
             <div className="icon">
               <img src={teamwork} alt="icon" />
-              <h4 style={{color:'#28b485'}} >Satisfied Customer</h4>
+              <h4 style={{ color: "#28b485" }}>Satisfied Customer</h4>
             </div>
             <p style={{ color: "#242424" }}>
-             We are committed to providing our clients with reliable service, from the moment you contact us to the delivery of your order.
-
-             
+              We are committed to providing our clients with reliable service,
+              from the moment you contact us to the delivery of your order.
             </p>
           </Card>
           <Card className="card">
             <div className="icon">
               <img src={diaphragm} alt="icon" />
-              <h4 style={{color:'#28b485'}} >Excellent Service</h4>
+              <h4 style={{ color: "#28b485" }}>Excellent Service</h4>
             </div>
             <p style={{ color: "#242424" }}>
-            We take pride in the quality of our cocopeat, which is carefully sourced and processed to ensure that it meets our clients' requirements.
+              We take pride in the quality of our cocopeat, which is carefully
+              sourced and processed to ensure that it meets our clients'
+              requirements.
             </p>
           </Card>
           <Card className="card">
             <div className="icon">
               <img src={money} alt="icon" />
-              <h4 style={{color:'#28b485'}} >Timely Delivery</h4>
+              <h4 style={{ color: "#28b485" }}>Timely Delivery</h4>
             </div>
             <p style={{ color: "#242424" }}>
-            We offer competitive pricing for our cocopeat products, so you can get the best value for your money.
+              We offer competitive pricing for our cocopeat products, so you can
+              get the best value for your money.
             </p>
           </Card>
         </Cards>

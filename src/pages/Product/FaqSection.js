@@ -2,11 +2,7 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { Layout } from "../Service/styles";
 import Toggle from "./Toggle";
-import {
-  AnimatePresence,
-  motion,
-  AnimateSharedLayout,
-} from "framer-motion/dist/framer-motion";
+import { AnimatePresence, motion, AnimateSharedLayout } from "framer-motion";
 import {
   pageAnimation,
   photoAnimation,

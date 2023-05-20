@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useRef } from "react";
 import styled from "styled-components";
+import emailjs from "emailjs-com";
+
 // Animations
-import { motion, AnimateSharedLayout } from "framer-motion/dist/framer-motion";
+import { motion } from "framer-motion";
 import {
   pageAnimation,
   titleAnimation,
 } from "../../components/Animation/Animation";
 import { Hide } from "../Service/styles";
+import { useHistory } from "react-router-dom/cjs/react-router-dom";
 
 const ContactStyle = styled(motion.section)`
   padding: 5rem;
@@ -118,16 +121,43 @@ const FormContainer = styled.form`
 `;
 
 const ContactForm = () => {
+  const form = useRef(null);
+  const history = useHistory();
+  const sendEmail = (e) => {
+    e.preventDefault();
+    const formElement = e.target; // Get the form element from the event
+
+    emailjs
+      .sendForm(
+        "service_e01w5yc",
+        "template_ljpn1xs",
+        formElement, // Pass the form element here
+        "os0DqSxeYI3huB3Y3"
+      )
+      .then((result) => {
+        console.log(result.text);
+        history.push("/"); // Push the user back to the home ("/") route
+      })
+      .catch((error) => {
+        console.log(error.text);
+      });
+  };
+
   return (
     <ContactStyle
       variants={pageAnimation}
       initial="hidden"
       animate="show"
       exit="exit"
+      onSubmit={(e) => {
+        sendEmail(e);
+      }}
     >
       <FormTitle variants={titleAnimation}>
         <Hide>
-          <motion.h4 styles={{backgroundColor:'#23d997'}}>Ananya Cocopeat Exports</motion.h4>
+          <motion.h4 styles={{ backgroundColor: "#23d997" }}>
+            Ananya Cocopeat Exports
+          </motion.h4>
           <motion.p>
             Thank you for considering Ananya Cocopeat Exports for your cocopeat
             and coir needs. We are confident that our products and services will
@@ -142,7 +172,7 @@ const ContactForm = () => {
           Your name <span>&#42;</span>
         </label>
         <input
-          name="Full Name"
+          name="Full_Name"
           type="text"
           placeholder="John Doe"
           required
@@ -154,7 +184,7 @@ const ContactForm = () => {
           Your email <span>&#42;</span>
         </label>
         <input
-          name="Your Email"
+          name="Your_Email"
           type="email"
           placeholder="johndoe@xyz.com"
           required
@@ -163,9 +193,9 @@ const ContactForm = () => {
 
         <label> Contact Number</label>
         <input
-          name="Interest"
+          name="Contact_Number"
           type="number"
-          max={10}
+          maxLength={10}
           placeholder="9597225658"
         />
 

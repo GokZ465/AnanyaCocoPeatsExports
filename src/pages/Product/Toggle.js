@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { motion, AnimateSharedLayout } from "framer-motion/dist/framer-motion";
+import { motion, AnimateSharedLayout } from "framer-motion";
 import { rotateSvg } from "../../components/Animation/Animation";
 
 const Toggle = ({ children, title }) => {

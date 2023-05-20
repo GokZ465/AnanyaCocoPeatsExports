@@ -1,3 +1,5 @@
+import home_svg from "../../images/home_svg.svg";
+
 export const homeObjOne = {
   lightBg: false,
   lightText: true,
@@ -9,7 +11,7 @@ export const homeObjOne = {
     "making them suitable for a range of applications, from potting mixes to hydroponics.\n\n\n n addition to cocopeat blocks, we also offer cocopeat chips and grow bags. Cocopeat chips are an excellent mulching material and can be used to improve soil structure and fertility. Our grow bags are ideal for growing vegetables, fruits, and flowers, and are available in various sizes and configurations to suit your specific needs.    ",
   buttonLabel: "Get Started",
   imgStart: "",
-  img: require("../../images/home_svg.svg"),
+  img: home_svg,
   alt: "Credit Card",
   buttonBool: "false",
 };
@@ -24,7 +26,7 @@ export const homeObjTwo = {
     "We have you covered no matter where you are located. Over 140 locations worldwide to ensure you have access anytime",
   buttonLabel: "Learn More",
   imgStart: "",
-  img: require("../../images/home_svg.svg"),
+  img: home_svg,
   alt: "Vault",
 };
 
@@ -55,6 +57,6 @@ export const homeObjFour = {
     "Never ever have to worry again about saved reciepts. We store your data, so you can access it anytime.",
   buttonLabel: "Sign Up Now",
   imgStart: "start",
-  img: require("../../images/home_svg.svg"),
+  img: home_svg,
   alt: "Vault",
 };
