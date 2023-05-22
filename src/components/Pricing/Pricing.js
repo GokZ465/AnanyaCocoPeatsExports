@@ -29,7 +29,9 @@ const Pricing = () => {
     <IconContext.Provider value={{ color: "#28b485", size: 64 }}>
       <PricingSection>
         <PricingWrapper>
-          <PricingHeading>Our Services</PricingHeading>
+          <PricingHeading>
+            Why To Choose Cocopeat for Agri Uses?
+          </PricingHeading>
           <PricingContainer>
             <PricingCard to="/sign-up">
               <PricingCardInfo>
@@ -53,7 +55,8 @@ const Pricing = () => {
                 <PricingCardFeatures>
                   <PricingCardFeature style={{ textAlign: "center" }}>
                     Our cocopeat is carefully processed to ensure that it has a
-                    light and fluffy texture that promotes air circulation and ideal balance of air and water for healthy plant growth.
+                    light and fluffy texture that promotes air circulation and
+                    ideal balance of air and water for healthy plant growth.
                   </PricingCardFeature>
                   {/* <PricingCardFeature>$10,000 Budget</PricingCardFeature>
                   <PricingCardFeature>Retargeting analytics</PricingCardFeature> */}
@@ -84,7 +87,8 @@ const Pricing = () => {
                   <PricingCardFeature style={{ textAlign: "center" }}>
                     Our cocopeat boasts excellent drainage properties, making it
                     the perfect growing medium for plants that require
-                    well-draining soil you can enjoy the benefits of excellent drainage.
+                    well-draining soil you can enjoy the benefits of excellent
+                    drainage.
                   </PricingCardFeature>
                   {/* <PricingCardFeature>$10,000 Budget</PricingCardFeature>
                   <PricingCardFeature>Retargeting analytics</PricingCardFeature> */}
@@ -145,7 +149,8 @@ const Pricing = () => {
                 <PricingCardFeatures>
                   <PricingCardFeature style={{ textAlign: "center" }}>
                     Our cocopeat is renowned for its exceptional water retention
-                    properties. Our cocopeat is carefully sourced and processed to ensure that it retains water for longer periods
+                    properties. Our cocopeat is carefully sourced and processed
+                    to ensure that it retains water for longer periods
                   </PricingCardFeature>
                   {/* <PricingCardFeature>Chemical Free</PricingCardFeature> */}
                 </PricingCardFeatures>

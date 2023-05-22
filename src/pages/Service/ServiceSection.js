@@ -180,7 +180,19 @@ const ServicesSection = () => {
         </Cards>
       </Description>
       <Image>
-        <motion.img initial="hidden" animate="show" src={home2} alt="" />
+        <motion.img
+          initial="hidden"
+          animate="show"
+          src={home2}
+          alt=""
+          style={{
+            maxWidth: "100%",
+            maxHeight: "500px",
+
+            display: "inlineBlock",
+            verticalAlign: " middle",
+          }}
+        />
       </Image>
     </Services>
   );
