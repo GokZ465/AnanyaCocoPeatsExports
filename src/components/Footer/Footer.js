@@ -1,20 +1,9 @@
 import React from "react";
-import { Button } from "../../globalStyles";
 import logo3 from "../Navbar/logo2-removebg-preview.png";
-import {
-  FaFacebook,
-  FaInstagram,
-  FaYoutube,
-  FaTwitter,
-  FaLinkedin,
-} from "react-icons/fa";
+
 import {
   FooterContainer,
-  FooterSubscription,
-  FooterSubText,
-  FooterSubHeading,
-  Form,
-  FormInput,
+ 
   FooterLinksContainer,
   FooterLinksWrapper,
   FooterLinkItems,
@@ -23,14 +12,13 @@ import {
   SocialMedia,
   SocialMediaWrap,
   SocialLogo,
-  SocialIcon,
+  
   WebsiteRights,
-  SocialIcons,
-  SocialIconLink,
+ 
 } from "./Footer.elements";
 
 function Footer() {
-  const date = new Date();
+ 
 
   return (
     <FooterContainer>
