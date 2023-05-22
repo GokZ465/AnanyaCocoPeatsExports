@@ -123,7 +123,8 @@ const FAQ = styled(Layout)`
     padding: 2rem 0;
     p {
       padding: 1rem 0;
-      font-size: 1.2rem;
+      font-size: 1.3rem;
+      font-weight: 500;
       letter-spacing: 1.5px;
 
       color: #15956a;
@@ -217,125 +218,17 @@ const FaqSection = () => {
             </p>
           </div>
         </Toggle> */}
-          <Toggle title="Cocopeat chips block">
-            <div className="answer">
-              <p></p>
-              <p>
-                <b>
-                  <em></em>
-                </b>{" "}
-                Cocopeat chips blocks are compressed blocks made from cocopeat
-                chips, which are small pieces of the coconut husk. These blocks
-                are commonly used as a growing medium for plants in horticulture
-                and agriculture. Cocopeat chips blocks are highly absorbent,
-                provide good aeration and drainage, and have excellent water
-                retention properties. They are a sustainable alternative to
-                traditional growing mediums such as peat moss and rock wool.
-                <NavLink
-                  className="styled-link"
-                  to="/subspack"
-                  style={{ width: "fit-content", color: "#179b6b" }}
-                ></NavLink>
-                <div style={containerStyles}>
-                  <ImageSlider
-                    slides={slides2}
-                    parentWidth={
-                      typeof window !== "undefined"
-                        ? window.innerWidth
-                        : parentWidth
-                    }
-                  />
-                </div>
-                <table>
-                  <thead>
-                    <tr>
-                      <th>Property</th>
-                      <th>Description</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Material</td>
-                      <td>Cocochips (coconut husk chips)</td>
-                    </tr>
-                    <tr>
-                      <td>Block Size</td>
-                      <td>5kg</td>
-                    </tr>
-                    <tr>
-                      <td>EC</td>
-                      <td>&lt;0.5 mS/cm (low salt content)</td>
-                    </tr>
-                    <tr>
-                      <td>pH</td>
-                      <td>5.8 - 6.8</td>
-                    </tr>
-                    <tr>
-                      <td>Moisture</td>
-                      <td>&lt;20%</td>
-                    </tr>
-                    <tr>
-                      <td>Particle Size</td>
-                      <td>1/2 inch to 3/4 inch (12-18 mm)</td>
-                    </tr>
-                    <tr>
-                      <td>Air-Filled Porosity</td>
-                      <td>10 - 20%</td>
-                    </tr>
-                    <tr>
-                      <td>Water Holding Capacity</td>
-                      <td>60 - 70%</td>
-                    </tr>
-                    <tr>
-                      <td>Decomposition Rate</td>
-                      <td>Slow</td>
-                    </tr>
-                    <tr>
-                      <td>Uses</td>
-                      <td>
-                        Horticulture, agriculture, and other plant-growing uses.
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </p>
-            </div>
-          </Toggle>
-          <Toggle title="Cocopeat Grow Bags">
-            <div className="answer">
-              <p>
-                Cocopeat grow bags are made from woven polypropylene bags filled
-                with cocopeat. They are used for growing plants in hydroponics
-                systems, greenhouses, and other agricultural applications.
-                Cocopeat grow bags are
-                <ul>
-                  <li>highly durable</li>
-                  <li>pH-neutral</li>
-                  <li>and provide excellent drainage for plants</li>
-                </ul>
-              </p>
-            </div>
-            <div style={containerStyles}>
-              <ImageSlider
-                slides={slides3}
-                parentWidth={
-                  typeof window !== "undefined"
-                    ? window.innerWidth
-                    : parentWidth
-                }
-              />
-            </div>
-          </Toggle>
           <Toggle title="Cocopeat Blocks">
             <div className="answer">
               {/* <p>Let's have some meaningful conversations</p> */}
               <p>
-                These are compressed blocks of cocopeat that are used for
-                various applications such as horticulture, agriculture, and
-                hydroponics. They are lightweight, easy to handle, and are a
-                sustainable alternative to traditional peat moss. Cocopeat
-                blocks are highly absorbent and retain water well, making them
-                an ideal growing medium for plants.
+                Coco peat is cleaned, dried, and compressed into slabs weighing
+                5 kg. More than 75 gallons of water can be stored in a 5 kg
+                block of coco peat. Both as potting soil and as a completely
+                soil-free growing substrate, coco peat is used. An ideal growing
+                medium for soil conditioning, floral and vegetable cultivation,
+                and both. Coco peat is perfect for hydroponic gardening,
+                mushroom cultivation, building golf courses, and landscaping.
                 <NavLink
                   className="styled-link"
                   to="/contact"
@@ -429,6 +322,147 @@ const FaqSection = () => {
                     </tr>
                   </table>
                 </div>
+              </p>
+            </div>
+          </Toggle>
+          <Toggle title="Cocopeat chips block">
+            <div className="answer">
+              <p></p>
+              <p>
+                <b>
+                  <em></em>
+                </b>{" "}
+                Cocochips blocks are made from the fibrous outer husk of the
+                coconut and are a popular growing medium for a wide range of
+                plants. They are an excellent alternative to traditional growing
+                media, as they are renewable, sustainable, and environmentally
+                friendly. The low EC value of these cocochips blocks makes them
+                an ideal choice for growers who want to ensure their plants
+                receive the right balance of nutrients.
+                <NavLink
+                  className="styled-link"
+                  to="/subspack"
+                  style={{ width: "fit-content", color: "#179b6b" }}
+                ></NavLink>
+                <div style={containerStyles}>
+                  <ImageSlider
+                    slides={slides2}
+                    parentWidth={
+                      typeof window !== "undefined"
+                        ? window.innerWidth
+                        : parentWidth
+                    }
+                  />
+                </div>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Property</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Material</td>
+                      <td>Cocochips (coconut husk chips)</td>
+                    </tr>
+                    <tr>
+                      <td>Block Size</td>
+                      <td>5kg</td>
+                    </tr>
+                    <tr>
+                      <td>EC</td>
+                      <td>&lt;0.5 mS/cm (low salt content)</td>
+                    </tr>
+                    <tr>
+                      <td>pH</td>
+                      <td>5.8 - 6.8</td>
+                    </tr>
+                    <tr>
+                      <td>Moisture</td>
+                      <td>&lt;20%</td>
+                    </tr>
+                    <tr>
+                      <td>Particle Size</td>
+                      <td>1/2 inch to 3/4 inch (12-18 mm)</td>
+                    </tr>
+                    <tr>
+                      <td>Air-Filled Porosity</td>
+                      <td>10 - 20%</td>
+                    </tr>
+                    <tr>
+                      <td>Water Holding Capacity</td>
+                      <td>60 - 70%</td>
+                    </tr>
+                    <tr>
+                      <td>Decomposition Rate</td>
+                      <td>Slow</td>
+                    </tr>
+                    <tr>
+                      <td>Uses</td>
+                      <td>
+                        Horticulture, agriculture, and other plant-growing uses.
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p>
+                  In summary, low EC cocochips 5KG blocks are an excellent
+                  choice for growers who want to ensure their plants receive the
+                  right balance of nutrients. These blocks have a low EC value,
+                  making them an ideal choice for growers who want to avoid
+                  excessive salt buildup in their growing medium. They are also
+                  pH-neutral, provide excellent drainage and air-filled
+                  porosity, and retain water well. Overall, these cocochips
+                  blocks are a sustainable and effective growing medium for a
+                  wide range of plants
+                </p>
+              </p>
+            </div>
+          </Toggle>
+          <Toggle title="Cocopeat Grow Bags">
+            <div className="answer">
+              <p>
+                Cocopeat growbags are a popular choice for growing plants
+                hydroponically, in greenhouses, and in other agricultural
+                applications. They are made from woven polypropylene bags filled
+                with cocopeat, and are highly durable, pH-neutral, and provide
+                excellent drainage for plants. Cocopeat growbags are available
+                in various sizes to suit different plant types and growing
+                environments.{" "}
+                <ul>
+                  <li>highly durable</li>
+                  <li>pH-neutral</li>
+                  <li>and provide excellent drainage for plants</li>
+                </ul>
+                <p style={{ paddingBottom: "0.5rem" }}>
+                  <ul>
+                    <ol>
+                      We offer two types of closed coco peat grow bags{" "}
+                      <li>Complete Coco peat Grow Bags</li>
+                      <li>Coco chips mixed Grow Bags</li>
+                    </ol>
+                  </ul>
+                </p>
+              </p>
+            </div>
+            <div style={containerStyles}>
+              <ImageSlider
+                slides={slides3}
+                parentWidth={
+                  typeof window !== "undefined"
+                    ? window.innerWidth
+                    : parentWidth
+                }
+              />
+            </div>
+            <div className="answer">
+              <p>
+                cocopeat growbags are an excellent growing medium for a wide
+                range of plants. They are highly durable, provide excellent
+                drainage, and retain water well, making them an ideal choice for
+                growers who want to ensure their plants are getting the right
+                balance of moisture and nutrients
               </p>
             </div>
           </Toggle>

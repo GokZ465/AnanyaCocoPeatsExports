@@ -18,6 +18,7 @@ import { photoAnimation } from "../../components/Animation/Animation";
 const InfoSection = ({
   primary,
   lightBg,
+  darkBg,
   topLine,
   lightTopLine,
   lightText,
@@ -33,7 +34,7 @@ const InfoSection = ({
 }) => {
   return (
     <motion.div variants={photoAnimation}>
-      <InfoSec lightBg={lightBg}>
+      <InfoSec lightBg={lightBg} darkBg={darkBg}>
         <Container>
           <InfoRow imgStart={imgStart}>
             <InfoColumn>

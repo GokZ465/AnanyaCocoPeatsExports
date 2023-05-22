@@ -4,6 +4,7 @@ export const InfoSec = styled.div`
   color: #fff;
   padding: 160px 0;
   background: ${({ lightBg }) => (lightBg ? "#fff" : "#2e6930")};
+  background: ${({ darkBg }) => (darkBg ? "#242425" : "")};
 `;
 
 export const InfoRow = styled.div`

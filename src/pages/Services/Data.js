@@ -1,4 +1,5 @@
 import home_svg from "../../images/home_svg.svg";
+import img21 from "../../images/21.jpg";
 
 export const homeObjOne = {
   lightBg: false,
@@ -39,7 +40,7 @@ export const homeObjThree = {
   headline:
     "your one-stop-shop for premium-quality cocopeat and coir products.",
   description:
-    "We have been in the cocopeat and coir business for over 16 years, and has built a strong reputation for delivering superior products and outstanding customer service.\n\nOur cocopeat products are widely used in agriculture, horticulture, and landscaping applications. Cocopeat is an excellent alternative to traditional soil.",
+    "We have been in the cocopeat and coir business for over 16 years, and has built a strong reputation for delivering superior products and outstanding customer service.\n\nOur cocopeat products are widely used in agriculture, horticulture, and landscaping applications. Cocopeat is an excellent alternative to traditional soil. ",
   buttonLabel: "",
   imgStart: "Read more",
   img: require("../../images/logo2.png"),
@@ -58,5 +59,20 @@ export const homeObjFour = {
   buttonLabel: "Sign Up Now",
   imgStart: "start",
   img: home_svg,
+  alt: "Vault",
+};
+
+export const homeObjFive = {
+  lightBg: false,
+  darkBg: true,
+  lightText: true,
+  lightTextDesc: true,
+  topLine: "Located in Sholavandan, Madurai",
+  headline: "our state-of-the-art manufacturing unit is equipped ",
+  description:
+    "With the latest machinery and technology, To produce high-quality cocopeat blocks, grow bags, and cocopeat chips. We source only the best quality raw materials from trusted suppliers and process them using eco-friendly methods to create products that are both effective and environmentally responsible",
+  buttonLabel: "Sign Up Now",
+  imgStart: "start",
+  img: img21,
   alt: "Vault",
 };
