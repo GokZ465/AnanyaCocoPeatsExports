@@ -1,34 +1,26 @@
 import React, { useEffect, useState } from "react";
 import { InfoSection, Pricing } from "../../components";
-import { AnimatePresence, motion } from "framer-motion";
-import { homeObjOne, homeObjThree, homeObjTwo, homeObjFour } from "./Data";
+import { motion } from "framer-motion";
+import { homeObjOne } from "./Data";
 import ImageSlider from "./ImageSlider";
 import ServiceSection from "../Service/ServiceSection.js";
 
 import img1 from "../../images/Slider/1.jpg";
-import img2 from "../../images/Slider/2.jpg";
-import img4 from "../../images/Slider/4.jpg";
+
 import img5 from "../../images/Slider/5.jpg";
 import img7 from "../../images/Slider/7.jpg";
 import img10 from "../../images/Slider/10.jpg";
 import img11 from "../../images/Slider/11.jpg";
 import img12 from "../../images/Slider/12.jpg";
 import img13 from "../../images/Slider/13.jpg";
-import img14 from "../../images/Slider/14.jpg";
 import img15 from "../../images/Slider/15.jpg";
-import img16 from "../../images/Slider/16.jpg";
 import img17 from "../../images/Slider/17.jpg";
 import img18 from "../../images/Slider/18.jpg";
-import img20 from "../../images/Slider/20.jpg";
-import img21 from "../../images/Slider/21.jpg";
-import img22 from "../../images/Slider/22.jpg";
+
 import {
   pageAnimation,
-  photoAnimation,
   fade,
-  lineAnimation,
   slider,
-  sliderContainer,
 } from "../../components/Animation/Animation";
 import FaqSection from "../Product/FaqSection";
 

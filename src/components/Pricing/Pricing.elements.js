@@ -17,7 +17,7 @@ export const PricingWrapper = styled.div`
   @media screen and (max-width: 960px) {
     margin: 0 30px;
     display: flex;
-    flex-direction: column;
+  flex-direction: column;
     align-items: center;
   }
 `;

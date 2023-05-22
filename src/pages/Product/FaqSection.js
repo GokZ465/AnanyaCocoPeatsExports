@@ -2,21 +2,10 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { Layout } from "../Service/styles";
 import Toggle from "./Toggle";
-import { AnimatePresence, motion, AnimateSharedLayout } from "framer-motion";
-import {
-  pageAnimation,
-  photoAnimation,
-  fade,
-  lineAnimation,
-  slider,
-  sliderContainer,
-} from "../../components/Animation/Animation";
+import { motion, AnimateSharedLayout } from "framer-motion";
+import { photoAnimation } from "../../components/Animation/Animation";
 import { NavLink } from "react-router-dom";
 import ImageSlider from "../HomePage/ImageSlider";
-import img1 from "./cocopeatblocks/2.jpg";
-import img4 from "./growbag/10.jpg";
-import img5 from "./growbag/3.jpg";
-import img6 from "../../images/Slider/7.jpg";
 
 // Animation
 

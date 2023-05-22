@@ -2,9 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { Layout, Description, ImageContainer } from "./styles";
 // Animation
-import { AnimatePresence, motion } from "framer-motion";
-import { useScroll } from "../../components/hooks/useScroll";
-import { fade, photoAnimation } from "../../components/Animation/Animation";
+import { motion } from "framer-motion";
+
 //Import Icons
 import clock from "../../components/img/badge.svg";
 import diaphragm from "../../components/img/settings.svg";
@@ -122,8 +121,6 @@ const Image = styled(ImageContainer)`
 `;
 
 const ServicesSection = () => {
-  const [element] = useScroll();
-
   return (
     <Services>
       <Description style={{ paddingRight: 0, paddingLeft: "3rem" }}>

@@ -1,12 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import React from "react";
-import {
-  faSmile,
-  faHeadset,
-  faStar,
-  faTruck,
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const slideStyles = {
   width: "100%",
