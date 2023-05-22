@@ -4,6 +4,7 @@ import GlobalStyles from "./globalStyles";
 import { Navbar, Footer } from "./components";
 import ScrollToTop from "./components/ScrollToTop";
 import { ClipLoader } from "react-spinners";
+import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 
 // Lazy-loaded components
 const Home = lazy(() => import("./pages/HomePage/Home"));
@@ -32,6 +33,8 @@ function App() {
           <Route path="/about" component={Services} />
           <Route path="/products" component={FaqSection} />
           <Route path="/contact" component={ContactUs} />
+          <Route component={NotFoundPage} />{" "}
+          {/* This route will be matched when no other routes match */}
         </Switch>
 
         <Footer />

@@ -163,8 +163,7 @@ const ServicesSection = () => {
             </div>
             <p style={{ color: "#242424" }}>
               We take pride in the quality of our cocopeat, which is carefully
-              sourced and processed to ensure that it meets our clients'
-              requirements.
+              sourced and processed to ensure that meets requirements.
             </p>
           </Card>
           <Card className="card">
@@ -173,7 +172,7 @@ const ServicesSection = () => {
               <h4 style={{ color: "#28b485" }}>Timely Delivery</h4>
             </div>
             <p style={{ color: "#242424" }}>
-              We offer competitive pricing for our cocopeat products, so you can
+              We offer the best value and competitive pricing for our cocopeat products, so you can
               get the best value for your money.
             </p>
           </Card>

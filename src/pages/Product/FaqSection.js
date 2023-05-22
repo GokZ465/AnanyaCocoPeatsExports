@@ -108,7 +108,7 @@ const FAQ = styled(Layout)`
     color: #28b485;
   }
   .faq-line {
-    background-color: #7ed56f;
+    background-color: #2e6930;
     height: 0.2rem;
     margin: 2rem 0;
     width: 100%;

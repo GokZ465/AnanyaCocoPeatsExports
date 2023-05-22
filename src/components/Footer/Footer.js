@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "../../globalStyles";
-import logo3 from "../Navbar/logo3.svg";
+import logo3 from "../Navbar/logo2-removebg-preview.png";
 import {
   FaFacebook,
   FaInstagram,
@@ -123,6 +123,7 @@ function Footer() {
                   width: "100%",
                   height: "100%",
                   paddingBottom: "0.5rem",
+                  transform: "scale(2.2)",
                   paddingTop: "0.3rem",
                 }}
               />

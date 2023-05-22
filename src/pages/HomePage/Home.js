@@ -72,7 +72,7 @@ const slides = [
   {
     url: `${img12}`,
     title: "hotel2",
-    text: "We take pride in the quality of our cocopeat, which is carefully sourced and processed to ensure that it meets our clients' requirements.",
+    text: "We take pride in the quality of our cocopeat, which is carefully sourced and processed to ensure that it meets requirements.",
   },
   {
     url: `${img15}`,
@@ -113,7 +113,7 @@ const Home = () => {
         />
       </motion.div>
       <InfoSection variants={slider} {...homeObjOne} />
-      <ServiceSection />
+      <ServiceSection id="scrollhere" />
       {/* <InfoSection variants={slider} {...homeObjThree} /> */}
       {/* <InfoSection {...homeObjTwo} /> */}
       <Pricing />

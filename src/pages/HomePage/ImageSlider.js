@@ -48,7 +48,7 @@ const dotsContainerStyles = {
   justifyContent: "center",
   width: "100%",
   position: "absolute",
-  background: "#7ED56F",
+  background: "#2e6930",
 };
 
 const dotStyle = {
@@ -180,7 +180,7 @@ const ImageSlider = ({ slides, parentWidth }) => {
                     fontSize: "1.6rem",
                     lineHeight: "30px",
                     margin: "20px 0",
-                    textAlign:'center',
+                    textAlign: "center",
                     color: "#fff",
                   }}
                 >

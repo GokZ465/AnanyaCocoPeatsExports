@@ -41,7 +41,7 @@ const InfoSection = ({
                 <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
-                <Link to="/sign-up">
+                {/* <Link to="/products">
                   {buttonBool === "false" ? (
                     <></>
                   ) : (
@@ -50,7 +50,7 @@ const InfoSection = ({
                       {buttonLabel}
                     </Button>
                   )}
-                </Link>
+                </Link> */}
               </TextWrapper>
             </InfoColumn>
             <InfoColumn>
