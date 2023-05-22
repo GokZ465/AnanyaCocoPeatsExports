@@ -69,13 +69,13 @@ const FormContainer = styled.form`
   border-radius: 7px;
   background-color: #1b1b1b;
   label {
-    color: #23d997;
+    color: #179b6b;
     margin-top: 1rem;
     margin-bottom: 0.4rem;
     letter-spacing: 1.4px;
   }
   button {
-    background: #23d997;
+    background: #179b6b;
     color: #1b1b1b;
     padding: 0.8rem 1rem;
     border-radius: 5.55px;
@@ -97,7 +97,7 @@ const FormContainer = styled.form`
     flex-grow: 2;
     border: 1px solid #fff;
     &:focus {
-      outline: 3px solid #23d997;
+      outline: 3px solid #179b6b;
     }
     &::placeholder {
       color: #828282;
@@ -155,7 +155,7 @@ const ContactForm = () => {
     >
       <FormTitle variants={titleAnimation}>
         <Hide>
-          <motion.h4 styles={{ backgroundColor: "#23d997" }}>
+          <motion.h4 styles={{ backgroundColor: "#179b6b" }}>
             Ananya Cocopeat Exports
           </motion.h4>
           <motion.p>

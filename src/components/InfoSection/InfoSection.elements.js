@@ -59,7 +59,7 @@ export const ImgWrapper = styled.div`
 `;
 
 export const TopLine = styled.div`
-  color: ${({ lightTopLine }) => (lightTopLine ? "#28b485" : "#28b485")};
+  color: ${({ lightTopLine }) => (lightTopLine ? "#15956a" : "#15956a")};
   font-size: 18px;
   line-height: 16px;
   font-weight: 700;
@@ -89,5 +89,5 @@ export const Subtitle = styled.p`
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
-  color: ${({ lightTextDesc }) => (lightTextDesc ? "#28b485" : "#1c2237")};
+  color: ${({ lightTextDesc }) => (lightTextDesc ? "#15956a" : "#1c2237")};
 `;

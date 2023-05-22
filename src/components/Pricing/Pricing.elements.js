@@ -101,7 +101,7 @@ export const PricingCardFeatures = styled.ul`
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #28b485;
+  color: #15956a;
 `;
 
 export const PricingCardFeature = styled.li`

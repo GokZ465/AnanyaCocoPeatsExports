@@ -76,7 +76,7 @@ const containerStyles = {
   display: "flex",
   alignItems: "center",
   borderRadius: "1rem",
-  border: "1px solid #28b485",
+  border: "1px solid #15956a",
 };
 
 const FAQ = styled(Layout)`
@@ -89,7 +89,7 @@ const FAQ = styled(Layout)`
     padding-bottom: 2rem;
     font-weight: lighter;
 
-    color: #28b485;
+    color: #15956a;
   }
   table {
     border-collapse: collapse;
@@ -105,7 +105,7 @@ const FAQ = styled(Layout)`
     letter-spacing: 1.5px;
     cursor: pointer;
 
-    color: #28b485;
+    color: #15956a;
   }
   .faq-line {
     background-color: #2e6930;
@@ -126,13 +126,13 @@ const FAQ = styled(Layout)`
       font-size: 1.2rem;
       letter-spacing: 1.5px;
 
-      color: #28b485;
+      color: #15956a;
     }
     ul {
       list-style-type: circle;
       li {
         margin-left: 2rem;
-        color: #23d997;
+        color: #179b6b;
         font-size: 1.1rem;
       }
     }
@@ -234,7 +234,7 @@ const FaqSection = () => {
                 <NavLink
                   className="styled-link"
                   to="/subspack"
-                  style={{ width: "fit-content", color: "#23d997" }}
+                  style={{ width: "fit-content", color: "#179b6b" }}
                 ></NavLink>
                 <div style={containerStyles}>
                   <ImageSlider
@@ -339,7 +339,7 @@ const FaqSection = () => {
                 <NavLink
                   className="styled-link"
                   to="/contact"
-                  style={{ width: "fit-content", color: "#23d997" }}
+                  style={{ width: "fit-content", color: "#179b6b" }}
                 >
                   Contact Us
                 </NavLink>

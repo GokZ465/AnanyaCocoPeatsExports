@@ -127,7 +127,7 @@ const ServicesSection = () => {
   return (
     <Services>
       <Description style={{ paddingRight: 0, paddingLeft: "3rem" }}>
-        <h2 style={{ color: "#28b485", fontSize: "2rem" }}>
+        <h2 style={{ color: "#15956a", fontSize: "2rem" }}>
           Why <span>Choose</span> Us
         </h2>
         <Cards className="cards">
@@ -139,7 +139,7 @@ const ServicesSection = () => {
                 src={clock}
                 alt="icon"
               />
-              <h4 style={{ color: "#28b485" }}>Quality & Reliablity </h4>
+              <h4 style={{ color: "#15956a" }}>Quality & Reliablity </h4>
             </div>
             <p style={{ color: "#242424" }}>
               We are committed to providing our clients with reliable service,
@@ -149,7 +149,7 @@ const ServicesSection = () => {
           <Card className="card">
             <div className="icon">
               <img src={teamwork} alt="icon" />
-              <h4 style={{ color: "#28b485" }}>Satisfied Customer</h4>
+              <h4 style={{ color: "#15956a" }}>Satisfied Customer</h4>
             </div>
             <p style={{ color: "#242424" }}>
               We are committed to providing our clients with reliable service,
@@ -159,7 +159,7 @@ const ServicesSection = () => {
           <Card className="card">
             <div className="icon">
               <img src={diaphragm} alt="icon" />
-              <h4 style={{ color: "#28b485" }}>Excellent Service</h4>
+              <h4 style={{ color: "#15956a" }}>Excellent Service</h4>
             </div>
             <p style={{ color: "#242424" }}>
               We take pride in the quality of our cocopeat, which is carefully
@@ -169,11 +169,11 @@ const ServicesSection = () => {
           <Card className="card">
             <div className="icon">
               <img src={money} alt="icon" />
-              <h4 style={{ color: "#28b485" }}>Timely Delivery</h4>
+              <h4 style={{ color: "#15956a" }}>Timely Delivery</h4>
             </div>
             <p style={{ color: "#242424" }}>
-              We offer the best value and competitive pricing for our cocopeat products, so you can
-              get the best value for your money.
+              We offer the best value and competitive pricing for our cocopeat
+              products, so you can get the best value for your money.
             </p>
           </Card>
         </Cards>

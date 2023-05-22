@@ -26,12 +26,10 @@ import {
 
 const Pricing = () => {
   return (
-    <IconContext.Provider value={{ color: "#28b485", size: 64 }}>
+    <IconContext.Provider value={{ color: "#15956a", size: 64 }}>
       <PricingSection>
         <PricingWrapper>
-          <PricingHeading>
-            Why To Choose Cocopeat for Agri Uses?
-          </PricingHeading>
+          <PricingHeading>Why To Choose Cocopeat for Agri Uses?</PricingHeading>
           <PricingContainer>
             <PricingCard to="/sign-up">
               <PricingCardInfo>
