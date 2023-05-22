@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import logo3 from "./logo3.svg";
+import logo3 from "./logo2-removebg-preview.png";
 import {
   Nav,
   NavbarContainer,
@@ -60,20 +60,22 @@ function Navbar() {
       <IconContext.Provider value={{ color: "#fff" }}>
         <Nav>
           <NavbarContainer>
-            <div style={{ maxHeight: "50rem" }}>
+            <div style={{ maxHeight: "50rem", paddingTop: "0.8rem" }}>
               <img
                 src={logo3}
                 alt="Ananya Coco Logo"
                 width="500px"
                 height="560px"
+                className="hide-bg"
                 // style={{ width: "100%" , height: "100%", paddingBottom:'0.5rem' , fill:'white' }}
                 style={{
-                  filter:
-                    "invert(94%) sepia(95%) saturate(2%) hue-rotate(243deg) brightness(105%) contrast(100%) ",
+                  // mixBlendMode: "multiply",
+                  // webkitFilter: "contrast(1)",
                   width: "100%",
                   height: "100%",
                   paddingBottom: "0.5rem",
                   paddingTop: "0.3rem",
+                  transform: "scale(2.2)",
                 }}
               />
             </div>
@@ -89,7 +91,9 @@ function Navbar() {
                   Home
                 </NavLinks>
               </NavItem>
-
+              <NavLinks to="/Products" onClick={closeMobileMenu}>
+                Products
+              </NavLinks>
               <NavItem
                 onClick={handleServicesClick}
                 servicesClick={servicesClick}
@@ -110,11 +114,7 @@ function Navbar() {
               <NavItem
                 onClick={handleProductsClick}
                 productsClick={productsClick}
-              >
-                <NavLinks to="/Products" onClick={closeMobileMenu}>
-                  Products
-                </NavLinks>
-              </NavItem>
+              ></NavItem>
 
               <NavItemBtn>
                 {/* {button ? (

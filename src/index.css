@@ -19,3 +19,7 @@ code {
   height: 100vh;
   background-color: #a9e39f; /* Secondary color */
 }
+.hide-bg {
+  mix-blend-mode: multiply;
+  filter: contrast(1);
+}
