@@ -25,7 +25,7 @@ const Pricing = () => {
         <PricingWrapper>
           <PricingHeading>Why To Choose Cocopeat for Agri Uses?</PricingHeading>
           <PricingContainer>
-            <PricingCard to="/sign-up">
+            <PricingCard to="/Products">
               <PricingCardInfo>
                 <PricingCardIcon>
                   <img
@@ -49,7 +49,7 @@ const Pricing = () => {
                 </PricingCardFeatures>
               </PricingCardInfo>
             </PricingCard>
-            <PricingCard to="/sign-up">
+            <PricingCard to="/Products">
               <PricingCardInfo>
                 <PricingCardIcon>
                   <img
@@ -74,7 +74,7 @@ const Pricing = () => {
                 </PricingCardFeatures>
               </PricingCardInfo>
             </PricingCard>
-            <PricingCard to="/sign-up">
+            <PricingCard to="/Products">
               <PricingCardInfo>
                 <PricingCardIcon>
                   <img
@@ -98,7 +98,7 @@ const Pricing = () => {
                 </PricingCardFeatures>
               </PricingCardInfo>
             </PricingCard>
-            <PricingCard to="/sign-up">
+            <PricingCard to="/Products">
               <PricingCardInfo>
                 <PricingCardIcon>
                   <img
